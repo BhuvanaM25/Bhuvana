@@ -1,5 +1,3 @@
-package com.bhu.model;
-
 public class SavingsAccount extends Account
 
 {
@@ -10,7 +8,7 @@ public class SavingsAccount extends Account
 
     public SavingsAccount() {}
 
-    public SavingsAccount(int accountNo, int openedDate, double balance,double minDepositAmount, int noOfTransactionsPerDay)
+    public SavingsAccount(int accountNo, String openedDate, double balance,double minDepositAmount, int noOfTransactionsPerDay)
 
     {
 
@@ -55,15 +53,4 @@ public class SavingsAccount extends Account
         this.noOfTransactionsPerDay = noOfTransactionsPerDay;
 
     }
-
-    public boolean validateMinimumDeposit(double amount)
-
-    {
-
-            return amount >= minDepositAmount;
-
-    }
-
 }
-
- 
