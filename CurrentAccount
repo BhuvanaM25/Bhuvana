@@ -1,12 +1,11 @@
 package com.bhu.model;
-
 public class CurrentAccount extends Account
 
 {
 
         private double overDraftLimit;
 
-        public CurrentAccount(int accountNo, LocalDate openedDate, double balance, double overDraftLimit)
+        public CurrentAccount(int accountNo, String openedDate, double balance, double overDraftLimit)
 
         {
 
@@ -36,12 +35,5 @@ public class CurrentAccount extends Account
 
         }
 
-        public boolean validateWithdraw(double amount)
-
-        {
-
-            return getBalance() - amount >= -overDraftLimit;
-
-        }
-
 }
+
