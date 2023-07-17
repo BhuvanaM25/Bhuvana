@@ -1,75 +1,74 @@
 package com.bhu.model;
-
-public class Account
-
+public class Account 
 {
 
-    private int accountNo;
+		private int accountNo;
 
-    private LocalDate openedDate;
+	    private String openedDate;
 
-    private double balance;
+	    private double balance;
 
-    public Account() {}
+	    public Account() {}
 
-    public Account(int accountNo, LocalDate openedDate, double balance)
+	    public Account(int accountNo, String openedDate, double balance)
 
-    {
+	    {
 
-        this.accountNo = accountNo;
+	        this.accountNo = accountNo;
 
-        this.openedDate = openedDate;
+	        this.openedDate = openedDate;
 
-        this.balance = balance;
+	        this.balance = balance;
 
-    }
+	    }
 
-    public int getAccountNo()
+	    public int getAccountNo()
 
-    {
+	    {
 
-        return accountNo;
+	        return accountNo;
 
-    }
+	    }
 
-    public void setAccountNo(int accountNo)
+	    public void setAccountNo(int accountNo)
 
-    {
+	    {
 
-        this.accountNo = accountNo;
+	        this.accountNo = accountNo;
 
-    }
+	    }
 
-    public LocalDate getOpenedDate()
+	    public String getOpenedDate()
 
-    {
+	    {
 
-        return openedDate;
+	        return openedDate;
 
-    }
+	    }
 
-    public void setOpenedDate(LocalDate openedDate)
+	    public void setOpenedDate(String openedDate)
 
-    {
+	    {
 
-        this.openedDate = openedDate;
+	        this.openedDate = openedDate;
 
-    }
+	    }
 
-    public double getBalance()
+	    public double getBalance()
 
-    {
+	    {
 
-        return balance;
+	        return balance;
 
-    }
+	    }
 
-    public void setBalance(double balance)
+	    public void setBalance(double balance)
 
-    {
+	    {
 
-        this.balance = balance;
+	        this.balance = balance;
 
-    }
+	    }
 
-}
+	}
+
