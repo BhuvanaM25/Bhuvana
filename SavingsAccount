@@ -1,0 +1,69 @@
+package com.bhu.model;
+
+public class SavingsAccount extends Account
+
+{
+
+    private double minDepositAmount;
+
+    private int noOfTransactionsPerDay;
+
+    public SavingsAccount() {}
+
+    public SavingsAccount(int accountNo, int openedDate, double balance,double minDepositAmount, int noOfTransactionsPerDay)
+
+    {
+
+        super(accountNo,openedDate,balance);
+
+        this.minDepositAmount = minDepositAmount;
+
+        this.noOfTransactionsPerDay = noOfTransactionsPerDay;
+
+        
+
+    }
+
+    public double getMinDepositAmount()
+
+    {
+
+        return minDepositAmount;
+
+    }
+
+    public void setMinDepositAmount(double minDepositAmount)
+
+    {
+
+        this.minDepositAmount = minDepositAmount;
+
+    }
+
+    public int getNoOfTransactionsPerDay()
+
+    {
+
+        return noOfTransactionsPerDay;
+
+    }
+
+    public void setNoOfTransactionsPerDay(int noOfTransactionsPerDay)
+
+    {
+
+        this.noOfTransactionsPerDay = noOfTransactionsPerDay;
+
+    }
+
+    public boolean validateMinimumDeposit(double amount)
+
+    {
+
+            return amount >= minDepositAmount;
+
+    }
+
+}
+
+ 
